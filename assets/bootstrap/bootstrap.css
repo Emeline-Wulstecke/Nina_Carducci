@@ -594,7 +594,8 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
+  width: 100%;
+  max-height: 699px;
 }
 
 .img-thumbnail {
@@ -3977,7 +3978,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #BEB45A;
+  background-color:#1B5E6F;
 }
 
 .nav-fill > .nav-link,

@@ -44,9 +44,10 @@ nav a {
 
 #about {
 	display: flex;
-	background-color: #F6D2B8;
+	width: 100%;
 	padding-inline: 100px;
 	padding-block: 100px;
+	background-color: #F6D2B8;
 	position: relative;
 	margin-top: -16px;
 }
@@ -70,15 +71,15 @@ nav a {
 
 .picture img {
 	width: 100%;
-
 }
+
 #about-me {
 	flex: 2;
 }
 
 #about-me h2 {
-	margin-top: 0.6em;
-    margin-bottom: 43px;
+	margin-top: 1em;
+    margin-bottom: 60px;
 	font-size: 30px;
 }
 .about-me__introduction {
@@ -94,15 +95,12 @@ nav a {
 	text-align: justify;
 }
 
-#gallery {
-	min-height: 100vh; 
-}
-
-.title{
+.title {
 	text-align: center;
 	padding-block: 1.5em;
 }
 .gallery .nav {
+	width: 100%;
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -128,7 +126,7 @@ nav a {
 .gallery-item {
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: 416px;
 	object-fit: cover;
 	padding: .5em;
 }
@@ -153,9 +151,11 @@ nav a {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	text-align: justify;
 }
 .quote__author {
+	display: flex;
+    justify-content: center;
 	font-family: Spectral;
 	font-weight: 800;
 	font-size: 22px;
@@ -197,6 +197,7 @@ nav a {
 }
 
 #contact {
+	display: flex;
 	margin: auto;
 	background-color: #D8D3A8 ;
 	position: relative;
@@ -206,7 +207,9 @@ nav a {
 
 #contact .container {
 	display: flex;
+	flex-direction: column;
 }
+
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -250,7 +253,9 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
-@media all and (max-width: 1180px) {
+/*** MEDIA QUERIES ***/
+
+@media all and (max-width: 1200px) {
 	.picture {
 		flex : 2;
 	}
@@ -261,7 +266,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me h2, #about-me p {
 		width: 100%;
 	}
 }
@@ -325,7 +330,7 @@ input[type="submit"] {
 	}
 }
 
-@media all and (max-width: 650px) {
+@media all and (max-width: 768px) {
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0;
@@ -349,9 +354,13 @@ input[type="submit"] {
 		max-width: 90%;
 	}
 	#about, #contact {
+		display: flex;
+    	flex-direction: column;
+		align-items: center;
 		padding-inline: 2em;
-		padding-block: 2em;
+		padding-block: 2em;	
 	}
+
 	form {
 		width: 100%;
 	}
