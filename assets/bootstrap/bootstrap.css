@@ -371,7 +371,7 @@ button,
 [type=button],
 [type=reset],
 [type=submit] {
-  -webkit-appearance: button;
+-webkit-appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -595,7 +595,6 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
 }
 
 .img-thumbnail {
@@ -3978,7 +3977,7 @@ textarea.form-control-lg {
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #0d6efd;
+  background-color: #BEB45A;
 }
 
 .nav-fill > .nav-link,

@@ -18,22 +18,22 @@ body {
 	align-items: center;
 }
 
-.top-header .name {
+.top-header h1 {
 	font-size: 26px;
 }
 
-.nav ul {
+nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
 
-.nav li {
+nav li {
 	padding-inline: 10px;
 }
 
-.nav a {
+nav a {
 	text-decoration: none;
 	color: #000
 }
@@ -48,6 +48,7 @@ body {
 	padding-inline: 100px;
 	padding-block: 100px;
 	position: relative;
+	margin-top: -16px;
 }
 
 .picture.left::before {
@@ -72,11 +73,12 @@ body {
 
 }
 #about-me {
-	flex: 2
+	flex: 2;
 }
-.about-me__title {
-	margin-top: 1em;
-	margin-bottom: 60px;
+
+#about-me h2 {
+	margin-top: 0.6em;
+    margin-bottom: 43px;
 	font-size: 30px;
 }
 .about-me__introduction {
@@ -84,18 +86,21 @@ body {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	text-align: justify;
 }
-#about-me p {
+.about-me__description {
 	width: 80%;
 	font-size: 14px;
+	text-align: justify;
 }
 
 #gallery {
-	/*	min-height: 100vh; */
+	min-height: 100vh; 
 }
+
 .title{
 	text-align: center;
-	padding-block: 2em;
+	padding-block: 1.5em;
 }
 .gallery .nav {
 	justify-content: center;
@@ -106,7 +111,8 @@ body {
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	background-color: #BEB45A;
 }
 .item-column {
 	position: relative;
