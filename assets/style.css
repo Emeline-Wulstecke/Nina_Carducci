@@ -102,12 +102,14 @@ nav a {
 .gallery .nav {
 	width: 100%;
 	justify-content: center;
+	cursor: pointer;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
-	background-color: #BEB45A;
+	background-color: #1B5E6F;
 	border-radius:0 ;
 }
+
 .nav-pills .nav-link {
 	color: #000;
 }
@@ -129,6 +131,7 @@ nav a {
 	height: 416px;
 	object-fit: cover;
 	padding: .5em;
+	cursor: pointer;
 }
 .mg-prev, .mg-next {
 	width: 30px;
