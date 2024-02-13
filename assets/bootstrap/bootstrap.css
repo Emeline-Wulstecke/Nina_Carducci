@@ -201,7 +201,10 @@ blockquote {
 
 b,
 strong {
-  font-weight: bolder;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: calc(1.275rem + 0.3vw);
 }
 
 small, .small {
