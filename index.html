@@ -14,21 +14,10 @@
     <meta name="description"
         content="Photographe professionnelle spécialisée dans les événements, les portraits & les mariages. Basé à Bordeaux, découvrez mon portfolio & réservez votre séance.">
 
-    <!-- Microdonnées Schema.org avec des balises meta pour Rich Snippet Google -->
-    <meta itemprop="provider" itemscope itemtype="https://schema.org/LocalBusiness">
-    <meta itemprop="name" content="Nina Carducci">
-    <meta itemprop="description"
-        content="Photographe professionnelle basée à Bordeaux : shootings, retouches et albums photos.">
-    <meta itemprop="address" content="68 avenue Alsace-Lorraine">
-    <meta itemprop="postalCode" content="33200">
-    <meta itemprop="addressLocality" content="Bordeaux">
-    <meta itemprop="addressCountry" content="France">
-    <meta itemprop="telephone" content="+33 5 56 67 78 89">
-    <meta itemprop="openingHours" content="Mo-Fr 10:00-19:00">
     <meta itemprop="url" content="https://emelinew1.github.io/P9_Nina_Carducci/">
     <meta itemprop="image" content="assets/images/nina.webp">
 
-	<!-- Balises meta pour Facebook/Twitter/Instagram OpenGraph -->
+	<!-- Balises meta pour Facebook/X/Instagram OpenGraph -->
     <meta property="og:title" content="Nina Carducci">
     <meta property="og:description"
         content="Photographe professionnelle basée à Bordeaux : shootings, retouches et albums photos.">
@@ -38,8 +27,8 @@
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
-    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/style.min.css">
 </head>
 
 <body>
@@ -52,7 +41,7 @@
             <li><a href="#contact">Contact</a></li>
             <li>
                 <a href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" class="social-link">
-                    <img src="assets/images/instagram.webp" alt=" Logo instagram " />
+                    <img src="assets/images/instagram.webp" alt=" Logo instagram "/>
                 </a>
             </li>
         </ul>
@@ -96,7 +85,7 @@
 
         <article id="about">
             <figure class="picture left">
-                <img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci" />
+                <img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci"/>
             </figure>
             <section id="about-me">
                 <h2>A propos de moi</h2>
@@ -125,31 +114,31 @@
             <figure class="gallery container py-3" style="display: none">
                 <img data-gallery-tag="Concert" class="gallery-item"
                     src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-                    alt=" Photo prise pendant un concert, lumières rouges" loading="lazy" />
+                    alt=" Photo prise pendant un concert, lumières rouges"/>
                 <img data-gallery-tag="Entreprises" class="gallery-item"
                     src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-                    alt="Portait d'entreprise d'un homme en costume" loading="lazy" />
+                    alt="Portait d'entreprise d'un homme en costume" loading="lazy"/>
                 <img data-gallery-tag="Entreprises" class="gallery-item"
                     src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
-                    alt=" Femme qui rit pendant une reunion" loading="lazy" />
+                    alt=" Femme qui rit pendant une reunion"/>
                 <img data-gallery-tag="Mariages" class="gallery-item"
                     src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-                    alt=" Zoom sur des mains de mariés" loading="lazy" />
+                    alt=" Zoom sur des mains de mariés"/>
                 <img data-gallery-tag="Portrait" class="gallery-item"
                     src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-                    alt=" Portrait d'un homme qui ferme les yeux" loading="lazy" />
+                    alt=" Portrait d'un homme qui ferme les yeux"/>
                 <img data-gallery-tag="Mariages" class="gallery-item"
                     src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
-                    alt="Mariés en train de marcher et de rire ensemble" loading="lazy" />
+                    alt="Mariés en train de marcher et de rire ensemble"/>
                 <img data-gallery-tag="Portrait" class="gallery-item"
                     src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-                    alt="Portait d'une jeune femme portant des lunettes" loading="lazy" />
+                    alt="Portait d'une jeune femme portant des lunettes"/>
                 <img data-gallery-tag="Concert" class="gallery-item"
                     src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-                    alt="Un chanteur pendant son concert" loading="lazy" />
+                    alt="Un chanteur pendant son concert"/>
                 <img data-gallery-tag="Entreprises" class="gallery-item"
                     src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
-                    alt="Portrait d'une femme rigolant devant son ordinateur" loading="lazy" />
+                    alt="Portrait d'une femme rigolant devant son ordinateur"/>
             </figure>
 
             <article class="quote">
@@ -242,12 +231,21 @@
     </main>
 
     <footer>
-        <p> Du lundi au vendredi de 10h à 19h - 05 56 67 78 89 </p>
-        <p> © Nina Carducci tous droits réservés || Photographe d'événements & portraits à Bordeaux</p><br>
+        <p class="copyright">© Nina Carducci - Tous droits réservés</p>
+        <address itemscope itemtype="https://schema.org/LocalBusiness">
+            <p itemprop="name">Nina Carducci</p>
+            <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="streetAddress">68, avenue Alsace-Lorraine - </span>
+                <span itemprop="postalCode">33200</span>
+                <span itemprop="addressLocality">Bordeaux</span>
+            </p>
+            <a href="tel:+3356677889" itemprop="telephone">05 56 67 78 89</a><br>
+            <p itemprop="openingHours" content="Mo-Fr 10:00-19:00">Du lundi au vendredi de 10h à 19h</p>
+        </address>
     </footer>
 
 
-    <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
+    <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="./assets/maugallery.min.js"></script>
