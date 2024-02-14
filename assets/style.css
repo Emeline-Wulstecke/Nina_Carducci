@@ -46,10 +46,11 @@ nav a {
 
 #about {
     display: flex;
-    background-color: #F6D2B8;
+    position: relative;
     padding-inline: 100px;
     padding-block: 100px;
-    position: relative;
+    width: 100%;
+    background-color: #F6D2B8;
 }
 
 .picture.left::before {
@@ -75,7 +76,8 @@ nav a {
 }
 
 #about-me {
-    flex: 2
+    flex: 2;
+    width: 100%;
 }
 
 .about-me__title {
@@ -85,10 +87,10 @@ nav a {
 }
 
 .about-me__introduction {
+    width: 60%;
     font-family: 'Spectral';
     font-weight: 800;
     font-style: italic;
-    width: 60%;
 }
 
 #about-me p {
@@ -97,6 +99,7 @@ nav a {
 }
 
 #gallery {
+    width:100%;
     min-height: 100vh;
 }
 
