@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link rel="preload" href="./assets/style.css" as="style">
+    <link rel="preload" href="./assets/scripts.min.js" as="script">
+    
+
     <meta name="description"
         content="Photographe professionnelle spécialisée dans les événements, les portraits & les mariages. Basé à Bordeaux, découvrez mon portfolio & réservez votre séance.">
 
@@ -38,7 +42,7 @@
             <li><a href="#contact">Contact</a></li>
             <li>
                 <a href="https://www.instagram.com/ninacarducci.photo/?hl=fr" target="_blank" class="social-link">
-                    <img src="assets/images/instagram.webp" alt="Logo instagram" />
+                    <img src="assets/images/instagram.webp" alt="Logo instagram">
                 </a>
             </li>
         </ul>
@@ -48,62 +52,48 @@
         <header id="header">
             <figure id="carouselExampleIndicators" class="carousel slide carousel-inner" data-bs-ride="carousel">
                 <picture class="carousel-item active">
-                    <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1-mob.webp"
-                        media="(max-width: 768px)">
-                    <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1-tab.webp"
-                        media="(max-width: 1200px)">
-                    <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1.webp"
-                        media="(min-width: 1200px)">
-                    <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1.webp" class="d-block w-100"
-                        alt="Un homme en costume marche dans la rue sur des rayures blanches et grises" />
+                    <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1-mob.webp" media="(max-width: 768px)">
+                    <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1-tab.webp" media="(max-width: 1200px)">
+                    <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1.webp" media="(min-width: 1200px)">
+                    <img loading="lazy" src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1.webp" class="d-block w-100" alt="Un homme en costume marche dans la rue sur des rayures blanches et grises">
                 </picture>
 
                 <picture class="carousel-item">
-                    <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1-mob.webp"
-                        media="(max-width: 768px)">
-                    <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1-tab.webp"
-                        media="(max-width: 1200px)">
-                    <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1.webp"
-                        media="(min-width: 1200px)">
-                    <img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1.webp" class="d-block w-100"
-                        alt="Deux hommes s'amusant dans une foule à un concert" />
+                    <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1-mob.webp" media="(max-width: 768px)">
+                    <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1-tab.webp" media="(max-width: 1200px)">
+                    <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1.webp" media="(min-width: 1200px)">
+                    <img loading="lazy" src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1.webp" class="d-block w-100" alt="Deux hommes s'amusant dans une foule à un concert">
                 </picture>
 
                 <picture class="carousel-item">
-                    <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-mob.webp"
-                        media="(max-width: 768px)">
-                    <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-tab.webp"
-                        media="(max-width: 1200px)">
-                    <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
-                        media="(min-width: 1200px)">
-                    <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100"
-                        alt="Deux mariés s'embrassant pendant leur entrée de bal de leur mariage " />
+                    <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-mob.webp" media="(max-width: 768px)">
+                    <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-tab.webp" media="(max-width: 1200px)">
+                    <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" media="(min-width: 1200px)">
+                    <img loading="lazy" src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="Deux mariés s'embrassant pendant leur entrée de bal de leur mariage ">
                 </picture>
+
                 <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Précédent</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Suivant</span>
                 </button>
             </figure>
         </header>
 
-        <article id="about">
+        <div id="about">
             <picture class="picture left">
                 <source srcset="./assets/images/nina.webp" media="(min-width: 768px)">
-                <img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci" />
+                <img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci">
             </picture>
             <section id="about-me">
                 <h2>A propos de moi</h2>
@@ -125,41 +115,23 @@
                     yeux sur vos photos.
                 </p>
             </section>
-        </article>
+        </div>
 
         <section id="gallery">
             <h2 class="title">Portfolio</h2>
             <figure class="gallery container py-3" style="display: none">
-                <img data-gallery-tag="Concert" class="gallery-item"
-                    src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp"
-                    alt=" Photo prise pendant un concert, lumières rouges" />
-                <img data-gallery-tag="Entreprises" class="gallery-item"
-                    src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp"
-                    alt="Portait d'entreprise d'un homme en costume" loading="lazy" />
-                <img data-gallery-tag="Entreprises" class="gallery-item"
-                    src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp"
-                    alt=" Femme qui rit pendant une reunion" />
-                <img data-gallery-tag="Mariages" class="gallery-item"
-                    src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp"
-                    alt=" Zoom sur des mains de mariés" />
-                <img data-gallery-tag="Portrait" class="gallery-item"
-                    src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp"
-                    alt=" Portrait d'un homme qui ferme les yeux" />
-                <img data-gallery-tag="Mariages" class="gallery-item"
-                    src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp"
-                    alt="Mariés en train de marcher et de rire ensemble" />
-                <img data-gallery-tag="Portrait" class="gallery-item"
-                    src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp"
-                    alt="Portait d'une jeune femme portant des lunettes" />
-                <img data-gallery-tag="Concert" class="gallery-item"
-                    src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp"
-                    alt="Un chanteur pendant son concert" />
-                <img data-gallery-tag="Entreprises" class="gallery-item"
-                    src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp"
-                    alt="Portrait d'une femme rigolant devant son ordinateur" />
+                <img loading="lazy" data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-wnX-fXzB6Cw-unsplash.webp" alt=" Photo prise pendant un concert, lumières rouges">
+                <img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/ali-morshedlou-WMD64tMfc4k-unsplash.webp" alt="Portait d'entreprise d'un homme en costume">
+                <img loading="lazy" data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/jason-goodman-tHO1_OuKbg0-unsplash.webp" alt=" Femme qui rit pendant une reunion">
+                <img loading="lazy" data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/hannah-busing-RvF2R_qMpRk-unsplash.webp" alt=" Zoom sur des mains de mariés">
+                <img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/ade-tunji-rVkhWWZFAtQ-unsplash.webp" alt=" Portrait d'un homme qui ferme les yeux">
+                <img data-gallery-tag="Mariages" class="gallery-item" src="./assets/images/gallery/mariage/jakob-owens-SiniLJkXhMc-unsplash.webp" alt="Mariés en train de marcher et de rire ensemble">
+                <img data-gallery-tag="Portrait" class="gallery-item" src="./assets/images/gallery/portraits/nino-van-prattenburg--443cl1uR_8-unsplash.webp" alt="Portait d'une jeune femme portant des lunettes">
+                <img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/austin-neill-hgO1wFPXl3I-unsplash.webp" alt="Un chanteur pendant son concert">
+                <img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-Fsgzm8N0hIY-unsplash.webp" alt="Portrait d'une femme rigolant devant son ordinateur">
             </figure>
 
-            <article class="quote">
+            <div class="quote">
                 <figure>
                     <blockquote class="quote__text">
                         Un portrait n’est pas une ressemblance. Dès lors qu’une émotion
@@ -170,7 +142,7 @@
                     </blockquote>
                     <figcaption class="quote__author">- Richard Avedon</figcaption>
                 </figure>
-            </article>
+            </div>
         </section>
 
         <section id="services">
@@ -257,7 +229,7 @@
                 <span itemprop="postalCode">33200</span>
                 <span itemprop="addressLocality">Bordeaux</span>
             </p>
-            <a href="tel:+3356677889" itemprop="telephone">05 56 67 78 89</a><br>
+            <a itemprop="telephone" href="tel:+3356677889">05 56 67 78 89</a><br>
             <p itemprop="openingHours" content="Mo-Fr 10:00-19:00">Du lundi au vendredi de 10h à 19h</p>
         </address>
     </footer>
@@ -269,5 +241,4 @@
     <script src="./assets/maugallery.min.js"></script>
     <script src="./assets/scripts.min.js"></script>
 </body>
-
 </html>
