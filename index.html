@@ -50,7 +50,7 @@
     </nav>
 
     <main>
-        <header id="header">
+        <header itemscope itemtype="https://schema.org/LocalBusiness" id="header">
             <figure id="carouselExampleIndicators" class="carousel slide carousel-inner" data-bs-ride="carousel">
                 <picture class="carousel-item active">
                     <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1-mob.webp" media="(max-width: 768px)">
@@ -89,9 +89,9 @@
         </header>
 
         <div id="about">
-            <picture class="picture left">
+            <picture itemprop="image" class="picture left">
                 <source srcset="./assets/images/nina.webp" media="(min-width: 768px)">
-                <img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci" width="450w"">
+                <img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci">
             </picture>
             <section id="about-me">
                 <h2>A propos de moi</h2>
@@ -143,7 +143,7 @@
             </div>
         </section>
 
-        <section id="services">
+        <section itemprop="priceRange" id="services">
             <h2 class="title">Mes services</h2>
             <ul class="container">
                 <li class="service service__description">
@@ -220,7 +220,7 @@
 
     <footer>
         <p class="copyright">© Nina Carducci - Tous droits réservés</p>
-        <address itemscope itemtype="https://schema.org/LocalBusiness">
+        <address>
             <p itemprop="name">Nina Carducci</p>
             <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
                 <span itemprop="streetAddress">68, avenue Alsace-Lorraine - </span>
