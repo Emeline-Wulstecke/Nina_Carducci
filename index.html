@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+   
     <link rel="preload" href="./assets/style.css" as="style">
     <link rel="preload" href="./assets/scripts.min.js" as="script">
     
@@ -19,6 +20,7 @@
         content="Photographe professionnelle spécialisée dans les événements, les portraits & les mariages. Basé à Bordeaux, découvrez mon portfolio & réservez votre séance.">
 
     <!-- Balises meta pour Facebook/X/Instagram OpenGraph -->
+    <meta name="author" content="Nina Carducci" />
     <meta property="og:title" content="Nina Carducci">
     <meta property="og:description"
         content="Photographe professionnelle basée à Bordeaux : shootings, retouches et albums photos.">
@@ -53,22 +55,19 @@
             <figure id="carouselExampleIndicators" class="carousel slide carousel-inner" data-bs-ride="carousel">
                 <picture class="carousel-item active">
                     <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1-mob.webp" media="(max-width: 768px)">
-                    <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1-tab.webp" media="(max-width: 1200px)">
-                    <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1.webp" media="(min-width: 1200px)">
+                    <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1-tab.webp" media="(min-width: 769px)">
                     <img loading="lazy" src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1.webp" class="d-block w-100" alt="Un homme en costume marche dans la rue sur des rayures blanches et grises">
                 </picture>
 
                 <picture class="carousel-item">
                     <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1-mob.webp" media="(max-width: 768px)">
-                    <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1-tab.webp" media="(max-width: 1200px)">
-                    <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1.webp" media="(min-width: 1200px)">
+                    <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1-tab.webp" media="(min-width: 769px)">
                     <img loading="lazy" src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1.webp" class="d-block w-100" alt="Deux hommes s'amusant dans une foule à un concert">
                 </picture>
 
                 <picture class="carousel-item">
                     <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-mob.webp" media="(max-width: 768px)">
-                    <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-tab.webp" media="(max-width: 1200px)">
-                    <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" media="(min-width: 1200px)">
+                    <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-tab.webp" media="(min-width: 769px)">
                     <img loading="lazy" src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="Deux mariés s'embrassant pendant leur entrée de bal de leur mariage ">
                 </picture>
 
@@ -93,7 +92,7 @@
         <div id="about">
             <picture class="picture left">
                 <source srcset="./assets/images/nina.webp" media="(min-width: 768px)">
-                <img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci">
+                <img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci" width="450w"">
             </picture>
             <section id="about-me">
                 <h2>A propos de moi</h2>
@@ -215,7 +214,7 @@
                 </form>
             </div>
             <figure class="picture right">
-                <img src="./assets/images/camera.webp" alt="Appareil Photo">
+                <img src="./assets/images/camera.webp" alt="Appareil Photo" width="425w">
             </figure>
         </section>
     </main>
@@ -229,7 +228,7 @@
                 <span itemprop="postalCode">33200</span>
                 <span itemprop="addressLocality">Bordeaux</span>
             </p>
-            <a itemprop="telephone" href="tel:+3356677889">05 56 67 78 89</a><br>
+            <p itemprop="telephone">05 56 67 78 89</p>
             <p itemprop="openingHours" content="Mo-Fr 10:00-19:00">Du lundi au vendredi de 10h à 19h</p>
         </address>
     </footer>
