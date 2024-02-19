@@ -20,20 +20,19 @@
         content="Photographe professionnelle spécialisée dans les événements, les portraits & les mariages. Basé à Bordeaux, découvrez mon portfolio & réservez votre séance.">
 
     <!-- Balises meta pour Facebook/X/Instagram OpenGraph -->
+    <meta property="og:type" content="website">
     <meta name="author" content="Nina Carducci" />
     <meta property="og:title" content="Nina Carducci">
-    <meta property="og:description"
-        content="Photographe professionnelle basée à Bordeaux : shootings, retouches et albums photos.">
     <meta property="og:url" content="https://emelinew1.github.io/P9_Nina_Carducci/">
+    <meta property="og:description"
+        content="Photographe professionnelle spécialisée dans les événements, les portraits & les mariages. Basé à Bordeaux, découvrez mon portfolio & réservez votre séance.">
     <meta property="og:image" content="assets/images/nina.webp">
-    <meta property="og:type" content="website">
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
+ 
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/style.min.css">
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/LocalBusiness">
     <nav class="top-header">
         <h1>Nina Carducci</h1>
         <ul>
@@ -49,26 +48,20 @@
         </ul>
     </nav>
 
-    <main>
-        <header itemscope itemtype="https://schema.org/LocalBusiness" id="header">
+    <main itemscope itemtype="https://schema.org/LocalBusiness">
+        <header id="header">
             <figure id="carouselExampleIndicators" class="carousel slide carousel-inner" data-bs-ride="carousel">
-                <picture class="carousel-item active">
-                    <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1-mob.webp" media="(max-width: 768px)">
-                    <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1-tab.webp" media="(min-width: 769px)">
-                    <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash_1.webp" class="d-block w-100" alt="Un homme en costume marche dans la rue sur des rayures blanches et grises">
-                </picture>
+                <figure class="carousel-item active">
+                    <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="Un homme en costume marche dans la rue sur des rayures blanches et grises" width="1583" height="732">
+                </figure>
 
-                <picture class="carousel-item">
-                    <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1-mob.webp" media="(max-width: 768px)">
-                    <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1-tab.webp" media="(min-width: 769px)">
-                    <img loading="lazy" src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1.webp" class="d-block w-100" alt="Deux hommes s'amusant dans une foule à un concert">
-                </picture>
+                <figure class="carousel-item">
+                    <img loading="lazy" src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash_1.webp" class="d-block w-100" alt="Deux hommes s'amusant dans une foule à un concert" width="1583" height="732">
+                </figure>
 
-                <picture class="carousel-item">
-                    <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-mob.webp" media="(max-width: 768px)">
-                    <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash-tab.webp" media="(min-width: 769px)">
-                    <img loading="lazy" src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="Deux mariés s'embrassant pendant leur entrée de bal de leur mariage ">
-                </picture>
+                <figure class="carousel-item">
+                    <img loading="lazy" src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="Deux mariés s'embrassant pendant leur entrée de bal de leur mariage" width="1583" height="732">
+                </figure>
 
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -89,10 +82,10 @@
         </header>
 
         <div id="about">
-            <picture itemprop="image" class="picture left">
-                <source srcset="./assets/images/nina.webp" media="(min-width: 768px)">
-                <img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci">
-            </picture>
+            <figure itemprop="image" class="picture left">
+                <img src="./assets/images/nina.webp" alt="Portrait de Nina Carducci" width="668"
+                height="668">
+            </figure>
             <section id="about-me">
                 <h2>A propos de moi</h2>
                 <p class="about-me__introduction">
@@ -214,7 +207,7 @@
                 
             </div>
             <figure class="picture right">
-                <img src="./assets/images/camera.webp" alt="Appareil Photo">
+                <img src="./assets/images/camera.webp" alt="Appareil Photo" width="420" height="420">
             </figure>
         </section>
     </main>
