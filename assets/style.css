@@ -11,6 +11,7 @@ body {
     font-style: normal;
 }
 
+
 .top-header {
     background-color: white;
     position: sticky;
@@ -23,21 +24,22 @@ body {
     align-items: center;
 }
 
-.nav ul {
+.top-header ul {
     display: flex;
     list-style-type: none;
     font-size: 14px;
     margin-bottom: 0;
 }
 
-.nav li {
+.top-header li {
     padding-inline: 10px;
 }
 
-.nav a {
+.top-header a {
     text-decoration: none;
     color: #000
 }
+
 
 .social-link img {
     width: 20px;
@@ -45,7 +47,7 @@ body {
 }
 
 img.w-100 {
-    aspect-ratio: auto 1582/ 732;
+    aspect-ratio: auto 1532/ 732;
   }
 
 
@@ -216,6 +218,7 @@ img.w-100 {
 }
 
 #contact {
+    display: flex;
     margin: auto;
     background-color: #D8D3A8;
     position: relative;
@@ -273,6 +276,20 @@ input[type="submit"] {
     background-color: #BEB45A;
     padding: .5em 1em
 }
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 26px 100px;
+    font-size: 16px;
+}
+
+footer a {
+    color: #000;
+}
+
 
 @media all and (max-width: 1180px) {
     .picture {
@@ -367,13 +384,13 @@ input[type="submit"] {
         padding-inline: 0;
     }
 
-    .top-header .nav,
-    .top-header .nav ul {
+    .top-header nav,
+    .top-header ul {
         width: 100%;
         padding: 0 0 0 0;
     }
 
-    .top-header .nav li {
+    .top-header li {
         flex: 1;
         padding-block: 1em;
         text-align: center;
